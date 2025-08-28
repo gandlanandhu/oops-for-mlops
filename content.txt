@@ -1,0 +1,6 @@
+lets write down everything that we'll cover in this video
+1.class and objects.
+2.class has data/attributes and functions/methods.
+    > code walkthrough
+    > attributes get called itself,methods called manually.
+3.why python is oop?
