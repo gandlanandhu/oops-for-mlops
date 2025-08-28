@@ -11,15 +11,17 @@ class chatbot:
                          2.press 2 to sigin
                          3.press 3 to write a post
                          4.press 4 to message a friend
-                         5.press any key to exit""")
+                         5.press any key to exit
+                         
+                         """)
         if user_input=='1':
             self.signup()
         elif user_input=='2':
             self.signin()
         elif user_input=='3':
-            pass
+            self.mypost()
         elif user_input=='4':
-            pass
+            self.send_message()
         else:
             exit()
     
@@ -47,5 +49,25 @@ class chatbot:
         print("\n")
         self.menu()
 
+    def mypost(self):
+        if self.loggedin==True:
+            text=input("please enter your content here")
+            print(f"the following content has been posted {text}")
+        else:
+            print("please sign in to proceed....")
+        print("\n")
+        self.menu()
+
+    def send_message(self):
+        if self.loggedin==True:
+            text=input("please enter your content here")
+            frnd=input("please enter the name of your friend whome you want to send")
+            print(f"your message has been sent to {frnd}")
+        else:
+            print("please sign in to proceed....")
+        print("\n")
+        self.menu()
+
+
     
-obj=chatbot()
+#obj=chatbot()
